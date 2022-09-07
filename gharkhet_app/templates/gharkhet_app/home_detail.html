@@ -10,8 +10,9 @@
 
 <body>
     <div class="" style="width: 700px; margin: 0 auto; color:rgb(78, 78, 78)">
-        <div class=""><a href="{% url 'gharkhet_app:home' %} "> HOME </a></div>
-        <h1 style="color:rgb(13, 116, 184)">{{ghar.title}}</h1>
+        <div class=""><a href="{% url 'gharkhet_app:home' %} " style="text-decoration: none; color: rgb(13, 116, 184)">
+                HOME </a></div>
+        <h1 style=" color:rgb(8, 112, 119)">{{ghar.title}}</h1>
         <div><img src="{{ghar.image.url}}" style="width: 100%; border-radius: 20px" alt=""></div>
         <h2 style="color:indianred">Price: {{ghar.price}}</h2>
         <p>{{ghar.detail}}</p>
